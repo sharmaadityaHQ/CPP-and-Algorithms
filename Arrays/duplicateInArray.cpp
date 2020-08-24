@@ -1,3 +1,5 @@
+https://www.interviewbit.com/problems/find-duplicate-in-array/
+
 int Solution::repeatedNumber(const vector<int> &A) {
     int n = A.size() - 1;
     int sq = sqrt(n); 
