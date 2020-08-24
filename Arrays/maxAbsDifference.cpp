@@ -1,6 +1,6 @@
 int Solution::maxArr(vector<int> &A)
 {
-
+    // express abs difference using modulus properties for different cases
     int max1 = INT_MIN, min1 = INT_MAX;
     int max2 = INT_MIN, min2 = INT_MAX;
 
