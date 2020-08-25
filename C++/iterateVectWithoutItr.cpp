@@ -14,6 +14,8 @@ int main()
 		cout << it << ' '; 
 	} 
 
+    // For updating values in a vector without using iterators
+    //  traverse the values stored in vector using reference and updated the value
     for (auto& it : arr) { 
         it *= 2; 
     } 
@@ -21,6 +23,6 @@ int main()
     for (auto& it : arr) { 
         cout << it << ' '; 
     } 
-    
+
 	return 0; 
 } 
