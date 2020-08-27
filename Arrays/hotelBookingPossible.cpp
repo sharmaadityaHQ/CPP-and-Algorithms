@@ -1,5 +1,7 @@
 // https://www.interviewbit.com/problems/hotel-bookings-possible/
 
+// sorts vector of pairs by 1st value of pair by default, add marker and calculate
+// active users
 bool Solution::hotel(vector<int> &arrive, vector<int> &depart, int K) {
     vector<pair<int,int>>ans;
     for (int i=0; i<arrive.size();i++) {
