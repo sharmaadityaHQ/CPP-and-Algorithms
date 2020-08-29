@@ -1,5 +1,7 @@
 // https://www.interviewbit.com/problems/max-sum-contiguous-subarray/
 
+// Popularly known as Kadane's algorithm
+
 int Solution::maxSubArray(const vector<int> &A)
 {
     int max_so_far = INT_MIN, max_ending_here = 0;
