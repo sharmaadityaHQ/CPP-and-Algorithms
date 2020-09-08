@@ -2,6 +2,10 @@
 
 // B is sub-string, A is main string
 
+// This is also a naive pattern searching algorithm.
+
+// O(m(n-m+1))
+
 int Solution::strStr(const string A, const string B) {
     int M = B.length(); 
     int N = A.length(); 
