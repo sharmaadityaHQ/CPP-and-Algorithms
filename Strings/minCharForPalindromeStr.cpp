@@ -1,3 +1,5 @@
+// https://www.interviewbit.com/problems/minimum-characters-required-to-make-a-string-palindromic/
+
 vector<int> computeLPSArray(string str) 
 { 
     int M = str.length(); 
