@@ -1,3 +1,5 @@
+// https://www.interviewbit.com/problems/multiply-strings/
+
 string Solution::multiply(string A, string B) {
     string num1 = A;
     string num2 = B;
