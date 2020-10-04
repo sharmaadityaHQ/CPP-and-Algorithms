@@ -5,8 +5,8 @@ DoublyLinkedListNode* reverse(DoublyLinkedListNode* head) {
     DoublyLinkedListNode* prev = NULL, *next = NULL;
     while(current != NULL) {
         next = current->next;
-        current->prev = next;
         current->next = prev;
+        current->prev = next;
         prev = current;
         current = next;
     }
