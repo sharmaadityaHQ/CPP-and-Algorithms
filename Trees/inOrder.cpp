@@ -12,6 +12,10 @@ class Node {
         }
 };
 
+
+// Function call happens only once for each node in the tree. For each call of this function
+// a maximum of k<=4 operations are performed. Hence, max. of k*n operations lead to O(n). 
+
 void inOrder(Node* root) {
     if(root == NULL) {
         return;
