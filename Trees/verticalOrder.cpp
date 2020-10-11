@@ -11,7 +11,7 @@ class Node {
 };
 
 // Method 1
-// Time Complexity - O(w*n) where w is width of binary tree. In worst case value of w can be O(n).
+// Time Complexity - O(w*n) where w is width of binary tree. In worst case w -> n when we have complete binary tree.
 // Hence, O(n*n)
 
 void findMinMax(Node* node, int* min, int* max, int hd) {
@@ -52,7 +52,8 @@ void verticalOrder(Node* root) {
 }
 
 // Method 2
-// Map operations take O(log n) therefore complexity of the below solution is O(nlog n)
+// Map operations take O(log n) and pre-order traversal is O(n) therefore complexity of the below solution is O(nlog n)
+// The below solution may not print nodes in same vertical order as they appear in tree
 
 void getVerticalOrder(Node* root, int hd, map<int, vector<int>> &m) {
     if(root == NULL) {
@@ -66,6 +67,8 @@ void getVerticalOrder(Node* root, int hd, map<int, vector<int>> &m) {
 
 void verticalOrder(Node* root) {
     map<int, vector<int>> m;
+    int hd = 0;
+    getVerticalOrder(root, hd, m);
     map<int, vector<int>>::iterator itr;
 
     for(itr = m.begin(); itr != m.end(); itr++) {
