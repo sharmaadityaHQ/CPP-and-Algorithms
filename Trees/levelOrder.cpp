@@ -57,7 +57,7 @@ void levelOrder(Node* root) {
     }
 
     queue<Node*> q;
-    q.push(root->data);
+    q.push(root);
     while(q.empty() == false) {
         Node* node = q.front();
         cout<<node->data<<" ";
