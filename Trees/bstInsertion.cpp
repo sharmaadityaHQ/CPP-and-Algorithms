@@ -2,6 +2,8 @@
 
 // Time Complexity - O(n) for skewed tree 
 
+// A new key is always inserted at the leaf.
+
 class Node {
     public:
         int data;
