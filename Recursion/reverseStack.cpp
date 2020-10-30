@@ -5,6 +5,7 @@
 void insert(stack<int> &s, int value) {
     if(s.size() == 0) {
         s.push(value);
+        return;
     }
 
     int temp = s.top();
