@@ -41,11 +41,11 @@ int knapsack(int wt[], int val[], int W, int n) {
 
 // Tabulation (Eliminates recursive calls, only matrix)
 
-void knapsack(int wt[], int val[], int w, int n) {
+int knapsack(int wt[], int val[], int w, int n) {
     int t[n+1][w+1];
 
     // Initializaton of matrix (same as base condition in recursion)
-    
+
     for(int i=0; i<n+1; i++) {
         for(int j=0; j<w+1; j++) {
             if(i == 0 || j == 0) {
@@ -63,5 +63,7 @@ void knapsack(int wt[], int val[], int w, int n) {
                 t[i][j] = t[i-1][j];
             }
         }
-    } 
+    }
+
+    return t[n][w];
 }
