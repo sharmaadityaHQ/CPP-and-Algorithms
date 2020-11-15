@@ -21,10 +21,10 @@ int coinChange(int coin[], int sum, int n) {
 
     for(int j = 1; j < sum+1; j++) {
         if(j % coin[0] != 0) {
-            t[i][j] = INT_MAX - 1;
+            t[1][j] = INT_MAX - 1;
         }
         else {
-            t[i][j] = j / coin[0];
+            t[1][j] = j / coin[0];
         }
     }
 
