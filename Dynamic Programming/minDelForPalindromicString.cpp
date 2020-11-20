@@ -1,4 +1,5 @@
 // Minimum deletion from a string to get a palindromic string
+// Minimum insertion in a string to make it a palindromic string
 
 int lcs(string X, string Y) {
     int t[X.size()+1][Y.size()+1];
